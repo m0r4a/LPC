@@ -1,0 +1,1 @@
+El script the chthx aunque lo traté de hacer lo más no hardcoded posible pues está orientado a un window manager específico que tengo en ArchLinux, entonces si se corre en cualquier otro entorno probablemetne no funcione, por ahora es privado pero cuando lo haga publico trabajaré en que funcione en más casos.
