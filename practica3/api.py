@@ -4,7 +4,7 @@ from datetime import datetime
 
 def get_weather():
     city = input('Enter the city you want to search: ')
-    API_KEY = "f274138c7483cb5369afdba679f96a47"
+    API_KEY = "Texto de ejemplo"
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}'
     response = requests.get(url)
     data = json.loads(response.content)
@@ -22,7 +22,7 @@ def weather_last_days():
         year = int(input('Enter the year: '))
         date = datetime(year, month, day, 9, 0, 0)
         unix_time = date.timestamp()
-        API_KEY = "f274138c7483cb5369afdba679f96a47"
+        API_KEY = "Texto de ejemplo"
         url = f'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={25.6667}&lon={-100.3167}&units=metric&dt={int(unix_time)}&appid={API_KEY}'
         response = requests.get(url)
         data = json.loads(response.content)
